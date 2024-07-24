@@ -82,7 +82,7 @@ def submit_form():
         cursor = conn.cursor()
         cursor.execute('''
             INSERT INTO NoticeOfCuratorAndTutor (
-                NoticeID, noticeLanguage, province, estateNumber,PersonType,FirstNames,Surname,homeAddress,curatorTutorType,curatorTutorName,curatorTutorAddress,appointmentTermination, 
+                noticeLanguage, province, estateNumber,PersonType,FirstNames,Surname,homeAddress,curatorTutorType,curatorTutorName,curatorTutorAddress,appointmentTermination, 
                 fromDate,mastersOffice,advertiserName,advertiserAddress,advertiserEmail,advertiserTelephone,DateSubmitted,publicationDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         ''', data)
         conn.commit()
