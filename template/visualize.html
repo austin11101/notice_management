@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualize Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NoticeID</th>
+                <th>Notice Language</th>
+                <th>Province</th>
+                <th>Estate Number</th>
+                <th>Person</th>
+                <th>First Name</th>
+                <th>Surname</th>
+                <th>Address</th>
+                <th>Curator/Tutor</th>
+                <th>curatator/Tutor Name</th>
+                <th>curatator/Tutor Address</th>
+                <th>Appointment/Termination</th>
+                <th>From Date</th>
+                <th>Masters Office</th>
+                <th>Advertiser Name</th>
+                <th>Advertiser Address</th>
+                <th>Advertiser Email</th>
+                <th>Advertiser Tel</th>
+                <th>Date Of Submission</th>
+                <th>Publication Date</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for notice in notices %}
+            <tr>
+                <td>{{ notice['NoticeID'] }}</td>
+                <td>{{ notice['noticeLanguage'] }}</td>
+                <td>{{ notice['province'] }}</td>
+                <td>{{ notice['estateNumber'] }}</td>
+                <td>{{ notice['PersonType'] }}</td>
+                <td>{{ notice['FirstNames'] }}</td>
+                <td>{{ notice['Surname'] }}</td>
+                <td>{{ notice['homeAddress'] }}</td>
+                <td>{{ notice['curatorTutorType'] }}</td>
+                <td>{{ notice['curatorTutorName'] }}</td>
+                <td>{{ notice['curatorTutorAddress'] }}</td>
+                <td>{{ notice['appointmentTermination'] }}</td>
+                <td>{{ notice['fromDate'] }}</td>
+                <td>{{ notice['mastersOffice'] }}</td>
+                <td>{{ notice['advertiserName'] }}</td>
+                <td>{{ notice['advertiserAddress'] }}</td>
+                <td>{{ notice['advertiserEmail'] }}</td>
+                <td>{{ notice['advertiserTelephone'] }}</td>
+                <td>{{ notice['DateSubmitted'] }}</td>
+                <td>{{ notice['publicationDate'] }}</td>
+                <td><form action="/delete/{{notices[0]}}" method ="post"><button class ="delete-btn" type="submit">Delete</button></form></td>
+               
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>

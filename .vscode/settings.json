@@ -1,0 +1,39 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "my online library",
+            "database": "online_library",
+            "username": "root",
+            "password": "Muxe@2001"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "notice_database",
+            "database": "notice_db",
+            "username": "root",
+            "password": "Muxe@2001"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "noticedb.db",
+            "database": "${workspaceFolder:notice}/noticedb.db"
+        }
+    ]
+}

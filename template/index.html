@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Application Page</title>
+
+    <link rel="stylesheet" href="notice_styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width =device-width ,initial-scale-1">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Form J295 - Notice of Curator and Tutor</h1>
+        <form action="/submit_form" method="post">
+            <label for="noticeLanguage">*Notice Language / Taal van kennisgewing:</label><br>
+            <input type="radio" id="english" name="noticeLanguage" value="English" required>
+            <label for="english">English</label>
+            <input type="radio" id="afrikaans" name="noticeLanguage" value="Afrikaans" required>
+            <label for="afrikaans">Afrikaans</label><br><br>
+
+            <label for="province">*Province / Provinsie:</label><br>
+            <input type="text" id="province" name="province" required><br><br>
+
+            <label for="estateNumber">*Estate Number / Boedelnommer:</label><br>
+            <input type="text" id="estateNumber" name="estateNumber" required><br><br>
+
+            <label>*Person / Person:</label><br>
+            <input type="radio" id="curatorship" name="PersonType" value="Curatorship" required>
+            <label for="curatorship">Under Curatorship</label><br>
+            <input type="radio" id="minor" name="PersonType" value="Minor" required>
+            <label for="minor">Minor</label><br><br>
+            
+            <label for="First_Name">*First Name</label><br>
+            <input type="text" id="curatorTutorName" name="FirstNames" required><br><br>
+
+            <label for="Surname">*Surname</label><br>
+            <input type="text" id="Surname" name="Surname" required><br><br>
+
+            <label for="address_">*Address</label><br>
+            <input type="text" id="curatorTutorAddress" name="homeAddress" required><br><br>
+
+            <label>*Curator/Tutor:</label><br>
+            <input type="radio" id="curator" name="curatorTutorType" value="Curator" required>
+            <label for="curator">Curator</label><br>
+            <input type="radio" id="Tutor" name="curatorTutorType" value="Tutor" required>
+            <label for="Tutor">Tutor</label><br><br>
+            
+               
+            <label for="curatorTutorName">*curatorTutorName</label><br>
+            <input type="text" id="curatorTutorName" name="curatorTutorName" required><br><br>
+
+
+            <label for="curatorTutorAddress">*curatorTutorAddress</label><br>
+            <input type="text" id="curatorTutorAddress" name="curatorTutorAddress" required><br><br>
+            
+            <label>*Whether / Of:</label><br>
+            <input type="radio" id="appointment" name="appointmentTermination" value="Appointment" required>
+            <label for="appointment">Appointment</label><br>
+            <input type="radio" id="termination" name="appointmentTermination" value="Termination" required>
+            <label for="termination">Termination</label><br><br>
+
+            <label for="fromDate">*As from date / Vanaf datum (CCYY-MM-DD):</label><br>
+            <input type="date" id="fromDate" name="fromDate" required><br><br>
+
+            
+            <label for="mastersOffice">*Master's Office:</label><br>
+            <input type="text" id="mastersOffice" name="mastersOffice" required><br><br>
+
+            <label for="advertiserName">*Advertiser's Name:</label><br>
+            <input type="text" id="advertiserName" name="advertiserName" required><br><br>
+
+            <label for="advertiserAddress">*Advertiser's Address:</label><br>
+            <input type="text" id="advertiserAddress" name="advertiserAddress" required><br><br>
+
+            <label for="advertiserEmail">*Advertiser's Email:</label><br>
+            <input type="email" id="advertiserEmail" name="advertiserEmail" required><br><br>
+
+            <label for="advertiserTelephone">*Advertiser's Telephone:</label><br>
+            <input type="tel" id="advertiserTelephone" name="advertiserTelephone" required><br><br>
+
+            <label for="DateSubmitted">*Date Submitted:</label><br>
+            <input type="date" id="DateSubmitted" name="DateSubmitted" required><br><br>
+
+            <label for="publicationDate">*For Publication in the Government Gazette on / Vir Publikasie in die Staatskoerant op (CCYY-MM-DD):</label><br>
+            <input type="date" id="publicationDate" name="publicationDate" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+      
+        <p><a href="/visualize">Visualize data</a></p>
+    </div>
+</body>
+
+<style>
+
+    
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 800mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 800mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    padding: 15px;
+    border: none;
+    border-radius: 1.5px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d241d;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+</style>
+
+</html>
