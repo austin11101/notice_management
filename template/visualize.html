@@ -72,7 +72,7 @@
                 <td>{{ notice['advertiserTelephone'] }}</td>
                 <td>{{ notice['DateSubmitted'] }}</td>
                 <td>{{ notice['publicationDate'] }}</td>
-                <td><form action="/delete/{{notices[0]}}" method ="post"><button class ="delete-btn" type="submit">Delete</button></form></td>
+                <td><form action="/delete/{{notice['NoticeID']}}" method ="DELETE"><button class ="delete-btn" type="delete">Delete</button></form></td>
                
             </tr>
             {% endfor %}
