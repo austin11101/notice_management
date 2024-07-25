@@ -1,5 +1,10 @@
 from flask import Flask, render_template, request, redirect,url_for ,jsonify
 import sqlite3
+import logging
+
+logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
 
 app = Flask(__name__, template_folder ='template')
 DATABASE ="noticedb.db"
@@ -7,7 +12,7 @@ DATABASE ="noticedb.db"
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)
     conn.row_factory =sqlite3.Row
-    print("Connected to database successfully")
+    logging.info("Connected to database successfully")
     return conn 
     
    
@@ -23,32 +28,34 @@ def init_db():
         cursor = conn.cursor()
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS NoticeOfCuratorAndTutor (
-                NoticeID INTEGER PRIMARY KEY AUTOINCREMENT,
+                NoticeID INTEGER  AUTOINCREMENT PRIMARY KEY,
                 noticeLanguage RADIO,
                 province TEXT,
                 estateNumber TEXT,
                 PersonType RADIO,
+                FirstNames TEXT,
+                Surname TEXT,
+                homeAddress TEXT, 
+                curatorTutorType RADIO,           
                 curatorTutorName TEXT,
-                curatorTutorSurname TEXT,
                 curatorTutorAddress TEXT,
                 appointmentTermination RADIO,
                 fromDate DATE,
-                publicationDate DATE,
                 mastersOffice TEXT,
                 advertiserName TEXT,
                 advertiserAddress TEXT,
                 advertiserEmail EMAIL,
                 advertiserTelephone TEL,
-                submitionDate DATE,
+                DateSubmitted DATE,
                 publicationDate DATE 
                        
             )
         ''')
-        print("Table created succesffully")
+        logging.info("Table created succesffully")
         conn.commit()
         conn.close()
 
-        init_db()
+       
 
 
 
@@ -78,14 +85,21 @@ def submit_form():
         request.form['publicationDate']
     )
 
-    with sqlite3.connect('noticedb.db') as conn:
-        cursor = conn.cursor()
-        cursor.execute('''
-            INSERT INTO NoticeOfCuratorAndTutor (
-                noticeLanguage, province, estateNumber,PersonType,FirstNames,Surname,homeAddress,curatorTutorType,curatorTutorName,curatorTutorAddress,appointmentTermination, 
-                fromDate,mastersOffice,advertiserName,advertiserAddress,advertiserEmail,advertiserTelephone,DateSubmitted,publicationDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-        ''', data)
-        conn.commit()
+    try:
+        with sqlite3.connect('noticedb.db') as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                INSERT INTO NoticeOfCuratorAndTutor (
+                    noticeLanguage, province, estateNumber, PersonType, FirstNames, Surname, homeAddress, curatorTutorType,
+                    curatorTutorName, curatorTutorAddress, appointmentTermination, fromDate, mastersOffice, advertiserName,
+                    advertiserAddress, advertiserEmail, advertiserTelephone, DateSubmitted, publicationDate
+                ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            ''', data)
+            conn.commit()
+
+            logging.info('Form submitted successfully')
+    except Exception as e:
+        logging.error(f'Error submitting form: {str(e)}')
 
     return redirect('/')
 
@@ -98,17 +112,23 @@ def visualize():
     notices = cursor.fetchall()
     conn.close()
 
+    logging.info('Info viewing submitted successfully')
     return render_template('visualize.html', notices=notices)
 
-@app.route('/delete/int:NoticeID>',methods=['POST'])
+
+
+@app.route('/delete/<int:NoticeID>', methods=['DELETE' ,'GET','POST'])
 def delete_entry(NoticeID):
-    conn =get_db_connection
-    curso =conn.curso()
-    curso.execute("NoticeOfCuratorAndTutor WHERE NoticeID =?", (NoticeID,))
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM NoticeOfCuratorAndTutor WHERE NoticeID = ?", (NoticeID,))
     conn.commit()
     conn.close()
+    logging.info('Record deleted')
+    return redirect('/visualize')
+ 
 
-    return redirect('visualize')
+   
 
 
 if __name__ == '__main__':
@@ -116,6 +136,7 @@ if __name__ == '__main__':
     app.run(debug=True)
     app.run()
     app.run(debug = True)
+    
     
 
 
