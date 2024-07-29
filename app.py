@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect,url_for ,jsonify
 import sqlite3
 import logging
-
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -97,7 +96,7 @@ def submit_form():
             ''', data)
             conn.commit()
 
-            logging.info('Form submitted successfully')
+            logging.info('record added successfully')
     except Exception as e:
         logging.error(f'Error submitting form: {str(e)}')
 
@@ -136,6 +135,7 @@ if __name__ == '__main__':
     app.run(debug=True)
     app.run()
     app.run(debug = True)
+    
     
     
 
