@@ -125,9 +125,61 @@ def delete_entry(NoticeID):
     conn.close()
     logging.info('Record deleted')
     return redirect('/visualize')
- 
 
-   
+@app.route('/edit/<int:NoticeID>', methods=['GET'])
+def edit_entry(NoticeID):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM NoticeOfCuratorAndTutor WHERE NoticeID = ?', (NoticeID,))
+    notice = cursor.fetchone()
+    conn.close()
+    return render_template('edit.html', notice=notice)
+
+
+@app.route('/update/<int:NoticeID>', methods=['POST'])
+def update_entry(NoticeID):
+    data = (
+        request.form['noticeLanguage'],
+        request.form['province'],
+        request.form['estateNumber'],
+        request.form['PersonType'],
+        request.form['FirstNames'],
+        request.form['Surname'],
+        request.form['homeAddress'],
+        request.form['curatorTutorType'],
+        request.form['curatorTutorName'],
+        request.form['curatorTutorAddress'],
+        request.form['appointmentTermination'],
+        request.form['fromDate'],
+        request.form['mastersOffice'],
+        request.form['advertiserName'],
+        request.form['advertiserAddress'],
+        request.form['advertiserEmail'],
+        request.form['advertiserTelephone'],
+        request.form['DateSubmitted'],
+        request.form['publicationDate'],
+        NoticeID
+    )
+
+    try:
+        with sqlite3.connect('noticedb.db') as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                UPDATE NoticeOfCuratorAndTutor SET
+                    noticeLanguage = ?, province = ?, estateNumber = ?, PersonType = ?, FirstNames = ?, Surname = ?,
+                    homeAddress = ?, curatorTutorType = ?, curatorTutorName = ?, curatorTutorAddress = ?,
+                    appointmentTermination = ?, fromDate = ?, mastersOffice = ?, advertiserName = ?, advertiserAddress = ?,
+                    advertiserEmail = ?, advertiserTelephone = ?, DateSubmitted = ?, publicationDate = ?
+                WHERE NoticeID = ?
+            ''', data)
+            conn.commit()
+
+            logging.info('Record updated successfully')
+            
+    except Exception as e:
+        logging.error(f'Error updating record: {str(e)}')
+
+    return redirect('/visualize') 
 
 
 if __name__ == '__main__':
@@ -136,7 +188,4 @@ if __name__ == '__main__':
     app.run()
     app.run(debug = True)
     
-    
-    
-
 
