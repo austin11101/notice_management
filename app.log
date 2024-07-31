@@ -232,4 +232,254 @@
 2024-07-29 13:23:45,786 - INFO - Connected to database successfully
 2024-07-29 13:23:45,787 - INFO - Info viewing submitted successfully
 2024-07-29 13:23:45,788 - INFO - 127.0.0.1 - - [29/Jul/2024 13:23:45] "GET /visualize HTTP/1.1" 200 -
-
+2024-07-29 15:47:10,968 - INFO - record added successfully
+2024-07-29 15:47:10,969 - INFO - 127.0.0.1 - - [29/Jul/2024 15:47:10] "[32mPOST /submit_form HTTP/1.1[0m" 302 -
+2024-07-29 15:47:10,976 - INFO - 127.0.0.1 - - [29/Jul/2024 15:47:10] "GET / HTTP/1.1" 200 -
+2024-07-29 15:47:14,058 - INFO - Connected to database successfully
+2024-07-29 15:47:14,059 - INFO - Info viewing submitted successfully
+2024-07-29 15:47:14,060 - INFO - 127.0.0.1 - - [29/Jul/2024 15:47:14] "GET /visualize HTTP/1.1" 200 -
+2024-07-29 15:47:19,396 - INFO - Connected to database successfully
+2024-07-29 15:47:19,398 - INFO - Record deleted
+2024-07-29 15:47:19,399 - INFO - 127.0.0.1 - - [29/Jul/2024 15:47:19] "[32mGET /delete/11 HTTP/1.1[0m" 302 -
+2024-07-29 15:47:19,403 - INFO - Connected to database successfully
+2024-07-29 15:47:19,404 - INFO - Info viewing submitted successfully
+2024-07-29 15:47:19,405 - INFO - 127.0.0.1 - - [29/Jul/2024 15:47:19] "GET /visualize HTTP/1.1" 200 -
+2024-07-29 20:03:09,179 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-29 20:03:09,179 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-29 20:03:09,183 - INFO -  * Restarting with stat
+2024-07-29 20:03:09,427 - WARNING -  * Debugger is active!
+2024-07-29 20:03:09,428 - INFO -  * Debugger PIN: 932-486-385
+2024-07-29 20:03:35,936 - INFO - 127.0.0.1 - - [29/Jul/2024 20:03:35] "GET / HTTP/1.1" 200 -
+2024-07-29 20:03:36,638 - INFO - 127.0.0.1 - - [29/Jul/2024 20:03:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-29 20:03:42,591 - INFO - Connected to database successfully
+2024-07-29 20:03:42,592 - INFO - Info viewing submitted successfully
+2024-07-29 20:03:42,607 - INFO - 127.0.0.1 - - [29/Jul/2024 20:03:42] "GET /visualize HTTP/1.1" 200 -
+2024-07-30 09:29:33,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-30 09:29:33,261 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-30 09:29:33,265 - INFO -  * Restarting with stat
+2024-07-30 09:29:33,543 - WARNING -  * Debugger is active!
+2024-07-30 09:29:33,543 - INFO -  * Debugger PIN: 712-001-179
+2024-07-30 09:30:04,749 - INFO - 127.0.0.1 - - [30/Jul/2024 09:30:04] "GET / HTTP/1.1" 200 -
+2024-07-30 09:30:05,937 - INFO - 127.0.0.1 - - [30/Jul/2024 09:30:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-30 09:33:19,058 - INFO - record added successfully
+2024-07-30 09:33:19,059 - INFO - 127.0.0.1 - - [30/Jul/2024 09:33:19] "[32mPOST /submit_form HTTP/1.1[0m" 302 -
+2024-07-30 09:33:19,064 - INFO - 127.0.0.1 - - [30/Jul/2024 09:33:19] "GET / HTTP/1.1" 200 -
+2024-07-30 09:33:39,668 - INFO - Connected to database successfully
+2024-07-30 09:33:39,668 - INFO - Info viewing submitted successfully
+2024-07-30 09:33:39,683 - INFO - 127.0.0.1 - - [30/Jul/2024 09:33:39] "GET /visualize HTTP/1.1" 200 -
+2024-07-30 09:46:39,107 - INFO - Connected to database successfully
+2024-07-30 09:46:39,108 - INFO - Info viewing submitted successfully
+2024-07-30 09:46:39,109 - INFO - 127.0.0.1 - - [30/Jul/2024 09:46:39] "GET /visualize HTTP/1.1" 200 -
+2024-07-30 09:47:02,358 - INFO - 127.0.0.1 - - [30/Jul/2024 09:47:02] "GET / HTTP/1.1" 200 -
+2024-07-30 09:51:02,469 - INFO - record added successfully
+2024-07-30 09:51:02,470 - INFO - 127.0.0.1 - - [30/Jul/2024 09:51:02] "[32mPOST /submit_form HTTP/1.1[0m" 302 -
+2024-07-30 09:51:02,475 - INFO - 127.0.0.1 - - [30/Jul/2024 09:51:02] "GET / HTTP/1.1" 200 -
+2024-07-30 09:51:14,989 - INFO - Connected to database successfully
+2024-07-30 09:51:14,990 - INFO - Info viewing submitted successfully
+2024-07-30 09:51:14,991 - INFO - 127.0.0.1 - - [30/Jul/2024 09:51:14] "GET /visualize HTTP/1.1" 200 -
+2024-07-30 09:52:15,002 - INFO - Connected to database successfully
+2024-07-30 09:52:15,005 - INFO - Record deleted
+2024-07-30 09:52:15,005 - INFO - 127.0.0.1 - - [30/Jul/2024 09:52:15] "[32mGET /delete/13 HTTP/1.1[0m" 302 -
+2024-07-30 09:52:15,009 - INFO - Connected to database successfully
+2024-07-30 09:52:15,009 - INFO - Info viewing submitted successfully
+2024-07-30 09:52:15,010 - INFO - 127.0.0.1 - - [30/Jul/2024 09:52:15] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 09:07:31,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-31 09:07:31,495 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-31 09:07:31,499 - INFO -  * Restarting with stat
+2024-07-31 09:07:31,795 - WARNING -  * Debugger is active!
+2024-07-31 09:07:31,795 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 09:07:43,760 - INFO - 127.0.0.1 - - [31/Jul/2024 09:07:43] "GET / HTTP/1.1" 200 -
+2024-07-31 09:07:44,574 - INFO - 127.0.0.1 - - [31/Jul/2024 09:07:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-31 09:07:48,825 - INFO - Connected to database successfully
+2024-07-31 09:07:48,826 - INFO - Info viewing submitted successfully
+2024-07-31 09:07:48,840 - INFO - 127.0.0.1 - - [31/Jul/2024 09:07:48] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 09:08:10,742 - INFO - Connected to database successfully
+2024-07-31 09:08:10,746 - INFO - Record deleted
+2024-07-31 09:08:10,746 - INFO - 127.0.0.1 - - [31/Jul/2024 09:08:10] "[32mGET /delete/4 HTTP/1.1[0m" 302 -
+2024-07-31 09:08:10,751 - INFO - Connected to database successfully
+2024-07-31 09:08:10,752 - INFO - Info viewing submitted successfully
+2024-07-31 09:08:10,753 - INFO - 127.0.0.1 - - [31/Jul/2024 09:08:10] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 09:16:44,548 - INFO - Connected to database successfully
+2024-07-31 09:16:44,549 - INFO - Info viewing submitted successfully
+2024-07-31 09:16:44,559 - INFO - 127.0.0.1 - - [31/Jul/2024 09:16:44] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 09:16:46,835 - INFO - 127.0.0.1 - - [31/Jul/2024 09:16:46] "[33mGET /edit/10 HTTP/1.1[0m" 404 -
+2024-07-31 09:17:38,292 - INFO - 127.0.0.1 - - [31/Jul/2024 09:17:38] "[33mGET /edit/10 HTTP/1.1[0m" 404 -
+2024-07-31 09:22:08,641 - INFO - 127.0.0.1 - - [31/Jul/2024 09:22:08] "[33mGET /edit/10 HTTP/1.1[0m" 404 -
+2024-07-31 09:22:10,438 - INFO - Connected to database successfully
+2024-07-31 09:22:10,439 - INFO - Info viewing submitted successfully
+2024-07-31 09:22:10,448 - INFO - 127.0.0.1 - - [31/Jul/2024 09:22:10] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:03:07,154 - INFO - Connected to database successfully
+2024-07-31 10:03:07,154 - INFO - Info viewing submitted successfully
+2024-07-31 10:03:07,176 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:07] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2024-07-31 10:03:07,215 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:07] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:03:07,216 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:07] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:03:07,229 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:07] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:03:07,258 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:07] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:03:55,070 - INFO - Connected to database successfully
+2024-07-31 10:03:55,075 - INFO - Info viewing submitted successfully
+2024-07-31 10:03:55,117 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:55] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2024-07-31 10:03:55,148 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:55] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:03:55,154 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:55] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:03:55,176 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:55] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:03:55,192 - INFO - 127.0.0.1 - - [31/Jul/2024 10:03:55] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:04:04,409 - INFO - Connected to database successfully
+2024-07-31 10:04:04,410 - INFO - Info viewing submitted successfully
+2024-07-31 10:04:04,421 - INFO - 127.0.0.1 - - [31/Jul/2024 10:04:04] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2024-07-31 10:04:04,440 - INFO - 127.0.0.1 - - [31/Jul/2024 10:04:04] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:04:04,443 - INFO - 127.0.0.1 - - [31/Jul/2024 10:04:04] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:04:04,457 - INFO - 127.0.0.1 - - [31/Jul/2024 10:04:04] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:05:03,943 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:05:03,993 - INFO -  * Restarting with stat
+2024-07-31 10:05:04,268 - WARNING -  * Debugger is active!
+2024-07-31 10:05:04,269 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:05:06,311 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:05:06,363 - INFO -  * Restarting with stat
+2024-07-31 10:13:51,996 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-31 10:13:51,996 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-31 10:13:51,999 - INFO -  * Restarting with stat
+2024-07-31 10:13:52,263 - WARNING -  * Debugger is active!
+2024-07-31 10:13:52,264 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:13:55,581 - INFO - 127.0.0.1 - - [31/Jul/2024 10:13:55] "GET / HTTP/1.1" 200 -
+2024-07-31 10:13:57,525 - INFO - Connected to database successfully
+2024-07-31 10:13:57,526 - INFO - Info viewing submitted successfully
+2024-07-31 10:13:57,551 - INFO - 127.0.0.1 - - [31/Jul/2024 10:13:57] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2024-07-31 10:13:57,579 - INFO - 127.0.0.1 - - [31/Jul/2024 10:13:57] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:13:57,580 - INFO - 127.0.0.1 - - [31/Jul/2024 10:13:57] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:13:57,603 - INFO - 127.0.0.1 - - [31/Jul/2024 10:13:57] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:15:35,486 - INFO - Connected to database successfully
+2024-07-31 10:15:35,487 - INFO - Info viewing submitted successfully
+2024-07-31 10:15:35,504 - INFO - 127.0.0.1 - - [31/Jul/2024 10:15:35] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2024-07-31 10:15:35,524 - INFO - 127.0.0.1 - - [31/Jul/2024 10:15:35] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:15:35,527 - INFO - 127.0.0.1 - - [31/Jul/2024 10:15:35] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:15:35,549 - INFO - 127.0.0.1 - - [31/Jul/2024 10:15:35] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:15:35,570 - INFO - 127.0.0.1 - - [31/Jul/2024 10:15:35] "[36mGET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:16:18,246 - INFO - Connected to database successfully
+2024-07-31 10:16:18,247 - INFO - Info viewing submitted successfully
+2024-07-31 10:16:18,258 - INFO - 127.0.0.1 - - [31/Jul/2024 10:16:18] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:18:57,666 - INFO - Connected to database successfully
+2024-07-31 10:18:57,667 - INFO - Info viewing submitted successfully
+2024-07-31 10:18:57,678 - INFO - 127.0.0.1 - - [31/Jul/2024 10:18:57] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:19:53,370 - INFO - Connected to database successfully
+2024-07-31 10:19:53,371 - INFO - Info viewing submitted successfully
+2024-07-31 10:19:53,381 - INFO - 127.0.0.1 - - [31/Jul/2024 10:19:53] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:19:54,656 - INFO - Connected to database successfully
+2024-07-31 10:19:54,657 - INFO - Info viewing submitted successfully
+2024-07-31 10:19:54,658 - INFO - 127.0.0.1 - - [31/Jul/2024 10:19:54] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:20:00,284 - INFO - Connected to database successfully
+2024-07-31 10:20:00,284 - INFO - Info viewing submitted successfully
+2024-07-31 10:20:00,285 - INFO - 127.0.0.1 - - [31/Jul/2024 10:20:00] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:22:28,965 - INFO - Connected to database successfully
+2024-07-31 10:22:28,966 - INFO - Info viewing submitted successfully
+2024-07-31 10:22:28,976 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:28] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:22:30,966 - INFO - Connected to database successfully
+2024-07-31 10:22:30,980 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:30] "[35m[1mGET /update/12 HTTP/1.1[0m" 500 -
+2024-07-31 10:22:31,000 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:31] "GET /update/12?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-07-31 10:22:31,003 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:31] "GET /update/12?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-07-31 10:22:31,030 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:31] "GET /update/12?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-07-31 10:22:31,051 - INFO - 127.0.0.1 - - [31/Jul/2024 10:22:31] "[36mGET /update/12?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:26:05,078 - INFO - Connected to database successfully
+2024-07-31 10:26:05,078 - INFO - Info viewing submitted successfully
+2024-07-31 10:26:05,079 - INFO - 127.0.0.1 - - [31/Jul/2024 10:26:05] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:26:06,946 - INFO - Connected to database successfully
+2024-07-31 10:26:06,959 - INFO - 127.0.0.1 - - [31/Jul/2024 10:26:06] "[35m[1mGET /update/12 HTTP/1.1[0m" 500 -
+2024-07-31 10:26:06,979 - INFO - 127.0.0.1 - - [31/Jul/2024 10:26:06] "[36mGET /update/12?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-31 10:26:06,983 - INFO - 127.0.0.1 - - [31/Jul/2024 10:26:06] "[36mGET /update/12?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-07-31 10:26:07,007 - INFO - 127.0.0.1 - - [31/Jul/2024 10:26:07] "[36mGET /update/12?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-31 10:27:11,976 - INFO - Connected to database successfully
+2024-07-31 10:27:11,976 - INFO - Info viewing submitted successfully
+2024-07-31 10:27:11,977 - INFO - 127.0.0.1 - - [31/Jul/2024 10:27:11] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:27:13,363 - INFO - Connected to database successfully
+2024-07-31 10:27:13,366 - INFO - 127.0.0.1 - - [31/Jul/2024 10:27:13] "GET /update/12 HTTP/1.1" 200 -
+2024-07-31 10:28:08,093 - INFO - Connected to database successfully
+2024-07-31 10:28:08,094 - INFO - Info viewing submitted successfully
+2024-07-31 10:28:08,095 - INFO - 127.0.0.1 - - [31/Jul/2024 10:28:08] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:35:05,722 - INFO - Connected to database successfully
+2024-07-31 10:35:05,723 - INFO - 127.0.0.1 - - [31/Jul/2024 10:35:05] "GET /update/10 HTTP/1.1" 200 -
+2024-07-31 10:45:09,363 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:45:09,421 - INFO -  * Restarting with stat
+2024-07-31 10:45:09,696 - WARNING -  * Debugger is active!
+2024-07-31 10:45:09,696 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:45:10,730 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:45:10,787 - INFO -  * Restarting with stat
+2024-07-31 10:45:11,103 - WARNING -  * Debugger is active!
+2024-07-31 10:45:11,104 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:45:52,483 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:45:52,549 - INFO -  * Restarting with stat
+2024-07-31 10:45:52,845 - WARNING -  * Debugger is active!
+2024-07-31 10:45:52,845 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:48:47,211 - INFO - Connected to database successfully
+2024-07-31 10:48:47,211 - INFO - Info viewing submitted successfully
+2024-07-31 10:48:47,225 - INFO - 127.0.0.1 - - [31/Jul/2024 10:48:47] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:48:50,014 - INFO - Connected to database successfully
+2024-07-31 10:48:50,019 - INFO - 127.0.0.1 - - [31/Jul/2024 10:48:50] "GET /edit/10 HTTP/1.1" 200 -
+2024-07-31 10:49:10,824 - INFO - Connected to database successfully
+2024-07-31 10:49:10,825 - INFO - 127.0.0.1 - - [31/Jul/2024 10:49:10] "GET /edit/10 HTTP/1.1" 200 -
+2024-07-31 10:55:02,573 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:55:02,617 - INFO -  * Restarting with stat
+2024-07-31 10:55:02,885 - WARNING -  * Debugger is active!
+2024-07-31 10:55:02,886 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:55:55,356 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:55:55,407 - INFO -  * Restarting with stat
+2024-07-31 10:55:55,665 - WARNING -  * Debugger is active!
+2024-07-31 10:55:55,666 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:56:07,786 - INFO -  * Detected change in '/home/baloyi/Desktop/document/Docufy/notice/app.py', reloading
+2024-07-31 10:56:07,841 - INFO -  * Restarting with stat
+2024-07-31 10:56:08,119 - WARNING -  * Debugger is active!
+2024-07-31 10:56:08,120 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 10:56:12,492 - INFO - Connected to database successfully
+2024-07-31 10:56:12,493 - INFO - Info viewing submitted successfully
+2024-07-31 10:56:12,507 - INFO - 127.0.0.1 - - [31/Jul/2024 10:56:12] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:56:16,365 - INFO - Connected to database successfully
+2024-07-31 10:56:16,383 - INFO - 127.0.0.1 - - [31/Jul/2024 10:56:16] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 10:56:46,566 - INFO - Connected to database successfully
+2024-07-31 10:56:46,567 - INFO - 127.0.0.1 - - [31/Jul/2024 10:56:46] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 10:57:37,706 - INFO - Connected to database successfully
+2024-07-31 10:57:37,707 - INFO - Info viewing submitted successfully
+2024-07-31 10:57:37,708 - INFO - 127.0.0.1 - - [31/Jul/2024 10:57:37] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 10:57:40,999 - INFO - Connected to database successfully
+2024-07-31 10:57:41,015 - INFO - 127.0.0.1 - - [31/Jul/2024 10:57:41] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 10:59:36,343 - INFO - Connected to database successfully
+2024-07-31 10:59:36,357 - INFO - 127.0.0.1 - - [31/Jul/2024 10:59:36] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 11:00:02,246 - INFO - Connected to database successfully
+2024-07-31 11:00:02,258 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:02] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 11:00:15,083 - INFO - Record updated successfully
+2024-07-31 11:00:15,084 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:15] "[32mPOST /update/12 HTTP/1.1[0m" 302 -
+2024-07-31 11:00:15,088 - INFO - Connected to database successfully
+2024-07-31 11:00:15,089 - INFO - Info viewing submitted successfully
+2024-07-31 11:00:15,090 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:15] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 11:00:35,132 - INFO - Connected to database successfully
+2024-07-31 11:00:35,133 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:35] "GET /edit/10 HTTP/1.1" 200 -
+2024-07-31 11:00:42,721 - INFO - Record updated successfully
+2024-07-31 11:00:42,721 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:42] "[32mPOST /update/10 HTTP/1.1[0m" 302 -
+2024-07-31 11:00:42,726 - INFO - Connected to database successfully
+2024-07-31 11:00:42,727 - INFO - Info viewing submitted successfully
+2024-07-31 11:00:42,728 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:42] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 11:00:52,723 - INFO - Connected to database successfully
+2024-07-31 11:00:52,723 - INFO - Info viewing submitted successfully
+2024-07-31 11:00:52,724 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:52] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 11:00:56,603 - INFO - Connected to database successfully
+2024-07-31 11:00:56,605 - INFO - 127.0.0.1 - - [31/Jul/2024 11:00:56] "GET /edit/10 HTTP/1.1" 200 -
+2024-07-31 11:01:02,760 - INFO - Record updated successfully
+2024-07-31 11:01:02,760 - INFO - 127.0.0.1 - - [31/Jul/2024 11:01:02] "[32mPOST /update/10 HTTP/1.1[0m" 302 -
+2024-07-31 11:01:02,764 - INFO - Connected to database successfully
+2024-07-31 11:01:02,765 - INFO - Info viewing submitted successfully
+2024-07-31 11:01:02,766 - INFO - 127.0.0.1 - - [31/Jul/2024 11:01:02] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 11:07:17,671 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-31 11:07:17,671 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-31 11:07:17,675 - INFO -  * Restarting with stat
+2024-07-31 11:07:17,939 - WARNING -  * Debugger is active!
+2024-07-31 11:07:17,940 - INFO -  * Debugger PIN: 126-323-637
+2024-07-31 11:07:41,284 - INFO - 127.0.0.1 - - [31/Jul/2024 11:07:41] "GET / HTTP/1.1" 200 -
+2024-07-31 11:07:47,574 - INFO - Connected to database successfully
+2024-07-31 11:07:47,574 - INFO - Info viewing submitted successfully
+2024-07-31 11:07:47,587 - INFO - 127.0.0.1 - - [31/Jul/2024 11:07:47] "GET /visualize HTTP/1.1" 200 -
+2024-07-31 11:07:57,022 - INFO - Connected to database successfully
+2024-07-31 11:07:57,040 - INFO - 127.0.0.1 - - [31/Jul/2024 11:07:57] "GET /edit/12 HTTP/1.1" 200 -
+2024-07-31 11:08:00,781 - INFO - Connected to database successfully
+2024-07-31 11:08:00,782 - INFO - Info viewing submitted successfully
+2024-07-31 11:08:00,783 - INFO - 127.0.0.1 - - [31/Jul/2024 11:08:00] "GET /visualize HTTP/1.1" 200 -
