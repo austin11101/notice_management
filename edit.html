@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Record</title>
+
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width =device-width ,initial-scale-1">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edit Record</h1>
+        <form action="/update/{{ notice['NoticeID'] }}" method="post">
+           
+            <label>Notice Language:</label>
+            <input type="radio" id="english" name="noticeLanguage" value="English" {% if notice['noticeLanguage'] == 'English' %} checked {% endif %}>
+            <label for="english">English</label>
+            <input type="radio" id="afrikaans" name="noticeLanguage" value="Afrikaans" {% if notice['noticeLanguage'] == 'Afrikaans' %} checked {% endif %}>
+            <label for="afrikaans">Afrikaans</label><br><br>
+    
+          
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" value="{{ notice['province'] }}" required><br><br>
+    
+            
+            <label for="estateNumber">Estate Number:</label>
+            <input type="text" id="estateNumber" name="estateNumber" value="{{ notice['estateNumber'] }}" required><br><br>
+    
+          
+            <label>Person:</label>
+            <input type="radio" id="curatorship" name="PersonType" value="Curatorship" {% if notice['PersonType'] == 'Curatorship' %} checked {% endif %}>
+            <label for="curatorship">Under Curatorship</label>
+            <input type="radio" id="minor" name="PersonType" value="Minor" {% if notice['PersonType'] == 'Minor' %} checked {% endif %}>
+            <label for="minor">Minor</label><br><br>
+    
+        
+            <label for="FirstNames">First Name:</label>
+            <input type="text" id="FirstNames" name="FirstNames" value="{{ notice['FirstNames'] }}" required><br><br>
+    
+           
+            <label for="Surname">Surname:</label>
+            <input type="text" id="Surname" name="Surname" value="{{ notice['Surname'] }}" required><br><br>
+    
+           
+            <label for="homeAddress">Home Address:</label>
+            <input type="text" id="homeAddress" name="homeAddress" value="{{ notice['homeAddress'] }}" required><br><br>
+    
+            
+            <label>Curator/Tutor:</label>
+            <input type="radio" id="curator" name="curatorTutorType" value="Curator" {% if notice['curatorTutorType'] == 'Curator' %} checked {% endif %}>
+            <label for="curator">Curator</label>
+            <input type="radio" id="Tutor" name="curatorTutorType" value="Tutor" {% if notice['curatorTutorType'] == 'Tutor' %} checked {% endif %}>
+            <label for="Tutor">Tutor</label><br><br>
+    
+          
+            <label for="curatorTutorName">Curator/Tutor Name:</label>
+            <input type="text" id="curatorTutorName" name="curatorTutorName" value="{{ notice['curatorTutorName'] }}" required><br><br>
+    
+            
+            <label for="curatorTutorAddress">Curator/Tutor Address:</label>
+            <input type="text" id="curatorTutorAddress" name="curatorTutorAddress" value="{{ notice['curatorTutorAddress'] }}" required><br><br>
+    
+    
+            <label>Appointment/Termination:</label>
+            <input type="radio" id="appointment" name="appointmentTermination" value="Appointment" {% if notice['appointmentTermination'] == 'Appointment' %} checked {% endif %}>
+            <label for="appointment">Appointment</label>
+            <input type="radio" id="termination" name="appointmentTermination" value="Termination" {% if notice['appointmentTermination'] == 'Termination' %} checked {% endif %}>
+            <label for="termination">Termination</label><br><br>
+    
+          
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate" name="fromDate" value="{{ notice['fromDate'] }}" required><br><br>
+    
+         
+            <label for="mastersOffice">Master's Office:</label>
+            <input type="text" id="mastersOffice" name="mastersOffice" value="{{ notice['mastersOffice'] }}" required><br><br>
+    
+            
+            <label for="advertiserName">Advertiser's Name:</label>
+            <input type="text" id="advertiserName" name="advertiserName" value="{{ notice['advertiserName'] }}" required><br><br>
+    
+           
+            <label for="advertiserAddress">Advertiser's Address:</label>
+            <input type="text" id="advertiserAddress" name="advertiserAddress" value="{{ notice['advertiserAddress'] }}" required><br><br>
+    
+       
+            <label for="advertiserEmail">Advertiser's Email:</label>
+            <input type="email" id="advertiserEmail" name="advertiserEmail" value="{{ notice['advertiserEmail'] }}" required><br><br>
+    
+           
+            <label for="advertiserTelephone">Advertiser's Telephone:</label>
+            <input type="tel" id="advertiserTelephone" name="advertiserTelephone" value="{{ notice['advertiserTelephone'] }}" required><br><br>
+    
+         
+            <label for="DateSubmitted">Date Submitted:</label>
+            <input type="date" id="DateSubmitted" name="DateSubmitted" value="{{ notice['DateSubmitted'] }}" required><br><br>
+    
+            <label for="publicationDate">Publication Date:</label>
+            <input type="date" id="publicationDate" name="publicationDate" value="{{ notice['publicationDate'] }}" required><br><br>
+    
+            <input type="submit" value="Update">
+        </form>
+        <p><a href="/visualize">Back to List</a></p>
+    </div>
+</body>
+
+<style>
+
+    
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 800mm;
+    width: 200mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 800mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    
+    width: 300%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    padding: 15px;
+    border: none;
+    border-radius: 1.5px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d241d;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+</style>
+
+</html>
