@@ -72,12 +72,23 @@
                 <td>{{ notice['advertiserTelephone'] }}</td>
                 <td>{{ notice['DateSubmitted'] }}</td>
                 <td>{{ notice['publicationDate'] }}</td>
-                <td><form action="/delete/{{notice['NoticeID']}}" method ="DELETE"><button class ="delete-btn" type="delete">Delete</button></form></td>
+                <td>
+                   
+                    <form action="/delete/{{notice['NoticeID']}}" method ="DELETE" onsubmit="return confirmDeletion();"><button class ="delete-btn" type="delete">Delete</button></form>
+                    
+
+                    <a href="/edit/{{ notice['NoticeID'] }}"><button>Edit</button></a>
+
+                </td>
                
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    
+    <script>
+        function confirmDeletion() {
+            return confirm('Are you sure you want to delete this item?');
+        }
+    </script>
 </body>
 </html>
